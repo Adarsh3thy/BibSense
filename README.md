@@ -37,7 +37,8 @@ Since any deep learning task requires significant GPU resources, we used Google 
 ### Cropping boundary boxes
 ![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/cropped_images/IMG_6921-X3_1166.jpg)
 ![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/cropped_images/IMG_6921-X3_353.jpg)
-## Optical Charcater Recognition
+<br/>
+## Optical Character Recognition (OCR)
 
 Next we crop the object detected which is our Bib image and apply optical character recognition (OCR) using Microsoft’s Computer Vision API to convert the image to text. Alternatively, We used Easy OCR (Open Source) was also used in order to generate better extraction values for the images.
 The textual data along with the image location is stored in the database, which is displayed to the end-user (typically marathon participants) in a web application upon entering his bib number.
