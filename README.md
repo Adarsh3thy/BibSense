@@ -32,7 +32,7 @@ Since any deep learning task requires significant GPU resources, we used Google 
 ![image](https://user-images.githubusercontent.com/89804212/191203552-7f243df4-47ff-4694-8f22-da73ff1a3366.png)
 <br/>
 ### Object Detection
-![image info](./Yolo_object_detection/output/tagged_images/IMG_6921-X3.png)
+![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/tagged_images/IMG_6778-X3.jpg)
 
 ### Cropping boundary boxes
 ![image info](./Yolo_object_detection/output/cropped_images/IMG_6921-X3_1166.png)
