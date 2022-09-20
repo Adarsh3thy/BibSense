@@ -35,8 +35,8 @@ Since any deep learning task requires significant GPU resources, we used Google 
 ![image](./Yolo_object_detection/output/tagged_images/IMG_6921-X3.png)
 
 ### Cropping boundary boxes
-![image](./Yolo_object_detection/output/cropped_images/IMG_6921-X3_1166.png)
-![image](./Yolo_object_detection/output/cropped_images/IMG_6921-X3_353.png)
+![image info](./Yolo_object_detection/output/cropped_images/IMG_6921-X3_1166.png)
+![image info](./Yolo_object_detection/output/cropped_images/IMG_6921-X3_353.png)
 ## Optical Charcater Recognition
 
 Next we crop the object detected which is our Bib image and apply optical character recognition (OCR) using Microsoft’s Computer Vision API to convert the image to text. Alternatively, We used Easy OCR (Open Source) was also used in order to generate better extraction values for the images.
