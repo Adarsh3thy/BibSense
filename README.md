@@ -35,8 +35,8 @@ Since any deep learning task requires significant GPU resources, we used Google 
 ![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/tagged_images/IMG_6921-X3.jpg)
 
 ### Cropping boundary boxes
-![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/tagged_images/IMG_6921-X3_1166.png)
-![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/tagged_images/IMG_6921-X3_353.png)
+![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/cropped_images/IMG_6921-X3_1166.jpg)
+![image](https://github.com/Adarsh3thy/BibSense/blob/main/Yolo_object_detection/output/cropped_images/IMG_6921-X3_353.jpg)
 ## Optical Charcater Recognition
 
 Next we crop the object detected which is our Bib image and apply optical character recognition (OCR) using Microsoft’s Computer Vision API to convert the image to text. Alternatively, We used Easy OCR (Open Source) was also used in order to generate better extraction values for the images.
