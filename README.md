@@ -30,7 +30,7 @@ YOLO  uses single regression to detect the target object directly from image pix
 In phase 1, runner’s racing bibs are detected by using YOLOv3. The overall process of fetching the labeled images to YOLOv3 model is associated with using OpenCV library. By applying the OpenCV library, all the input images are scaled to the same size.
 Since any deep learning task requires significant GPU resources, we used Google Colab to train our model. Colab can also access data located in Google Drive easily. The images along with the annotations were stored in google drive and loaded into the Collaboratory. <br/>
 ![image](https://user-images.githubusercontent.com/89804212/191203552-7f243df4-47ff-4694-8f22-da73ff1a3366.png)
-
+![image](Yolo_1.png)
 ## Optical Charcater Recognition
 
 Next we crop the object detected which is our Bib image and apply optical character recognition (OCR) using Microsoft’s Computer Vision API to convert the image to text. Alternatively, We used Easy OCR (Open Source) was also used in order to generate better extraction values for the images.
