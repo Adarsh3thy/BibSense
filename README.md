@@ -13,7 +13,7 @@ Our system receives a set of natural images taken in the sports events and outpu
 ## DataSet
 The dataset for this project consisted of images from a marathon event. We collected 1500 jpg images taken from various angles with a resolution of 1600*1027 pixels from two marathon events held in India. The image gathered for our dataset has at least one visible racing bib that is mostly not obstructed by any other obstruction.
 
-We split the dataset into two types of annotation, for racing bib detection and numerical digit detection. We define the name of the class object in a text file named “class.txt” in each dataset directory. For racing bib detection, we annotated each image with class and bounding box over a fully identified and obstructed racing bib.
+We split the dataset into two types of annotation, for racing bib detection and numerical digit detection. We define the name of the class object in a text file named “class.txt” in each dataset directory. For racing bib detection, we annotated each image with class and bounding box over a fully identified and obstructed racing bib.<br/>
 ![image](https://user-images.githubusercontent.com/89804212/191203289-97694fb4-38d2-4529-8ea7-d7a88d09d81f.png)
 
 
@@ -23,6 +23,20 @@ We split the dataset into two types of annotation, for racing bib detection and 
 - Feed the cropped images to Microsoft Computer Vision API to convert the image to text.
 - Push the Text data into Postgres Database
 - Use a Node.js REST API to fetch the data from database based on bib number and display it to the user in an React application. 
+
+## Training YoLov3
+Our proposed method used a state-of-the-art object detection model based on the YOLOv3 algorithm to solve the bib recognition problem. 
+YOLO  uses single regression to detect the target object directly from image pixels  by predicting multiple bounding boxes and class probabilities for those boxes. YOLO trains on full images and straight away optimizes detection performance
+In phase 1, runner’s racing bibs are detected by using YOLOv3. The overall process of fetching the labeled images to YOLOv3 model is associated with using OpenCV library. By applying the OpenCV library, all the input images are scaled to the same size.
+Since any deep learning task requires significant GPU resources, we used Google Colab to train our model. Colab can also access data located in Google Drive easily. The images along with the annotations were stored in google drive and loaded into the Collaboratory. <br/>
+![image](https://user-images.githubusercontent.com/89804212/191203552-7f243df4-47ff-4694-8f22-da73ff1a3366.png)
+
+## Optical Charcater Recognition
+
+Next we crop the object detected which is our Bib image and apply optical character recognition (OCR) using Microsoft’s Computer Vision API to convert the image to text. Alternatively, We used Easy OCR (Open Source) was also used in order to generate better extraction values for the images.
+The textual data along with the image location is stored in the database, which is displayed to the end-user (typically marathon participants) in a web application upon entering his bib number.
+![image](https://user-images.githubusercontent.com/89804212/191203757-202a5d96-2fa5-4a38-82b6-7f78bc896cc2.png)
+
 
 ## Persona  <br/>
 •	Sport event photographers <br/>
